@@ -4,7 +4,6 @@ sudo apt upgrade -y
 
 # Install basic tools
 sudo apt install git -y
-sudo apt install curl -y
 sudo apt install wget -y
 sudo apt install python3.8 -y
 sudo apt install gcc-10 g++-10 -y
