@@ -32,6 +32,11 @@ If everything installed properly, you should be able to run this command without
 ```bash
 roslaunch pkg_name start_pkg.launch
 ```
+You can then open a new terminal window (keep the one above running) and run:
+
+```bash
+chmod +x ./QGroundControl.AppImage
+```
 
 ## Sample Codes
 *Sample code sections will be provided in the future once installation is complete.*
