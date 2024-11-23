@@ -1,12 +1,17 @@
 
 # Run and build PX4
 export ROS_DISTRO=noetic
+export CC=/usr/bin/gcc-10
+export CXX=/usr/bin/g++-10
 source /opt/ros/${ROS_DISTRO}/setup.bash
 source ~/catkin_ws/devel/setup.bash
 cd ~/PX4-Autopilot
 
 # Install Gazebo
 pip install symforce
+pip install kconfiglib
+pip install jsonschema
+sudo apt update && sudo apt upgrade -y
 DONT_RUN=1  make px4_sitl_default gazebo
 cd ~/catkin_ws/src
 catkin_create_pkg pkg_name rospy --rosdistro ${ROS_DISTRO}
@@ -44,6 +49,8 @@ export ROS_PACKAGE_PATH=\$ROS_PACKAGE_PATH:~/PX4-Autopilot
 export ROS_PACKAGE_PATH=\$ROS_PACKAGE_PATH:~/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic
 export PATH="/usr/bin/python3.8:\$PATH"
 export GAZEBO_PLUGIN_PATH=\$GAZEBO_PLUGIN_PATH:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins
+export CC=/usr/bin/gcc-10
+export CXX=/usr/bin/g++-10
 EOF
 
 cd ~
@@ -59,4 +66,4 @@ wget https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl.AppImage
 chmod +x ./QGroundControl.AppImage
 
 echo 'Installation complete. Rebooting now...'
-sudo reboot now
+#sudo reboot now
