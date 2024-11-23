@@ -8,9 +8,9 @@ source ~/catkin_ws/devel/setup.bash
 cd ~/PX4-Autopilot
 
 # Install Gazebo
-pip install symforce
-pip install kconfiglib
-pip install jsonschema
+pip3 install symforce
+pip3 install kconfiglib
+pip3 install jsonschema
 sudo apt update && sudo apt upgrade -y
 DONT_RUN=1  make px4_sitl_default gazebo
 cd ~/catkin_ws/src
