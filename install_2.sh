@@ -66,4 +66,4 @@ wget https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl.AppImage
 chmod +x ./QGroundControl.AppImage
 
 echo 'Installation complete. Rebooting now...'
-#sudo reboot now
+sudo reboot now
