@@ -35,7 +35,7 @@ roslaunch pkg_name start_pkg.launch
 You can then open a new terminal window (keep the one above running) and run:
 
 ```bash
-chmod +x ./QGroundControl.AppImage
+./QGroundControl.AppImage
 ```
 
 ## Sample Codes
