@@ -18,13 +18,13 @@ PX4 is an open-source flight control software for drones and other unmanned vehi
 To install ROS Noetic and PX4, you will need to run two commands. They will both reboot your machine. After running the first script, you will need to run the second installation command. <br>
 Run this command in your ubuntu terminal. Make sure you have curl installed `sudo apt install curl -y`:
 ```bash
-curl -S https://raw.githubusercontent.com/CerfMetal/ROS-Install/refs/heads/main/install_1.sh | sudo bash
+curl -S https://raw.githubusercontent.com/CerfMetal/ROS-Install/refs/heads/main/install_1.sh | bash
 ```
 <br>
 Then run the second command: <br>
 
 ```bash
-curl -S https://raw.githubusercontent.com/CerfMetal/ROS-Install/refs/heads/main/install_2.sh | sudo bash
+curl -S https://raw.githubusercontent.com/CerfMetal/ROS-Install/refs/heads/main/install_2.sh | bash
 ```
 <br>
 If everything installed properly, you should be able to run this command without any problems and get a simulation running:
